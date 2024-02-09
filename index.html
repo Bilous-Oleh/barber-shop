@@ -3,30 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Barber Shop</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <a href="/" class="logo">
         <img src="./images/logo.svg" alt="Logo" />
       </a>
       <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services and prices</a></li>
-          <li><a href="#">Barbers</a></li>
-          <li><a href="/contacts.html">Contacts</a></li>
+        <ul class="header-nav">
+          <li><a class="header-nav-link" href="#">Services and prices</a></li>
+          <li><a class="header-nav-link" href="#">Barbers</a></li>
+          <li><a class="header-nav-link" href="#">About</a></li>
+          <li><a class="header-nav-link" href="/contacts.html">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a class="header-contact" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="header-btn" type="button">Online-booking</button>
     </header>
 
     <main>
-      <section>
-        <span>A hair salon for men in Kyiv</span>
-        <h1>BarberShop</h1>
-        <p>
+      <section class="hero">
+        <span class="uptitle">A hair salon for men in Kyiv</span>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-subtitle">
           We are experts in trendy men’s haircuts. We work quickly, carefully
           and with style.
         </p>
@@ -51,8 +58,8 @@
             />
           </li>
         </ul>
-        <span>About</span>
-        <h2>Best Barbershop in your city</h2>
+        <span class="uptitle">About</span>
+        <h2 class="section-title">Best Barbershop in your city</h2>
         <p>
           If you want to add more confidence to your image, you should
           definitely visit us.
@@ -68,8 +75,8 @@
       </section>
 
       <section>
-        <span>Spend your time with the best masters</span>
-        <h2>Services and prices</h2>
+        <span class="uptitle">Spend your time with the best masters</span>
+        <h2 class="section-title">Services and prices</h2>
         <ul>
           <li>
             <p>Men’s haircut</p>
@@ -129,8 +136,8 @@
           </li>
         </ul>
         <div>
-          <span>Old traditional school</span>
-          <h2>¿Why people come to us?</h2>
+          <span class="uptitle">Old traditional school</span>
+          <h2 class="section-title">¿Why people come to us?</h2>
           <p>
             Only good things are said about us. But it's better to see and feel
             1 time than read 10 times.
@@ -139,8 +146,8 @@
       </section>
 
       <section>
-        <span>For true enjoyers of the atmosphere</span>
-        <h2>Our barbers</h2>
+        <span class="uptitle">For true enjoyers of the atmosphere</span>
+        <h2 class="section-title">Our barbers</h2>
         <ul>
           <li>
             <img
@@ -194,8 +201,8 @@
       </section>
 
       <section>
-        <span>In Latin, "barba" means "beard"</span>
-        <h2>Portfolio</h2>
+        <span class="uptitle">In Latin, "barba" means "beard"</span>
+        <h2 class="section-title">Portfolio</h2>
         <ul>
           <li>
             <img
@@ -233,7 +240,7 @@
       </section>
 
       <section>
-        <h2>Contacts</h2>
+        <h2 class="section-title">Contacts</h2>
         <address>
           <ul>
             <li>
@@ -253,7 +260,7 @@
             </li>
           </ul>
         </address>
-        <span>Working hours</span>
+        <span class="uptitle">Working hours</span>
         <p>Every day from 9:00 to 22:00</p>
       </section>
     </main>
