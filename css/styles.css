@@ -1,21 +1,48 @@
 :root {
   --font-raleway: "Raleway", sans-serif;
-  --color-darkGray: #303030;
-  --color-orange: #ff6c00;
-  --color-white: #ffffff;
-  --color-lightGray: #9da4bd;
+
 }
 
-* {
+/* * {
   margin: 0;
   padding: 0;
-}
+} */
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* For screenriders only - pattern */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+/* For screenreaders only - pattern */
 .hide {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -30,13 +57,14 @@ body {
   word-wrap: normal !important;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.link {
+  text-decoration: none;
 }
 
 .section-title {
@@ -64,12 +92,12 @@ h6 {
   text-transform: uppercase;
   border: 1px solid #ff6c00;
   border-radius: 25px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 /* ----------HEADER---------- */
 
-.header {
+.header a {
   /* background-color: aquamarine; */
   font-weight: 600;
   font-size: 12px;
@@ -78,13 +106,10 @@ h6 {
   color: #ffffff;
 }
 
-ul,
-li {
-  list-style: none;
-}
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
 
-.link {
-  text-decoration: none;
 }
 
 /* .header-nav-link {
@@ -113,9 +138,9 @@ li {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer; */
-  /* border: 1px solid var(--color-orange);
+  /* border: 1px solid #ff6c00;
   border-radius: 25px; */
-  color: var(--color-white);
+  color: #ffffff;
 }
 
 /* ------------HERO----------- */
@@ -123,6 +148,7 @@ li {
 .hero-list {
   background-color: #ffffff;
 }
+
 .hero-link {
   font-weight: 600;
   font-size: 11px;
@@ -136,21 +162,15 @@ li {
   color: #ff6c00;
 }
 
-.hero {
+.hero-wrap {
   background-image: url(../images/hero-pic.jpg);
+  padding: 272px 100px 208px 100px;
 }
 
 .hero-uptitle {
-  /* font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase; */
-  color: #303030;
-}
-
-.hero-uptitle {
-  color: var(--color-lightGray);
+  color: #9da4bd;
   opacity: 0.6;
+  margin-bottom: 20px;
 }
 
 .hero-title {
@@ -161,6 +181,7 @@ li {
   line-height: 1.18;
   letter-spacing: 0.05em;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .hero-subtitle {
@@ -172,16 +193,24 @@ li {
 
 /* ----------ABOUT---------- */
 
+.about {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .about-uptitle {
   /* font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   text-transform: uppercase; */
   color: #303030;
+  margin-bottom: 20px;
+
 }
 
 .about-title {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .about-subtitle {
@@ -190,6 +219,7 @@ li {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 20px;
 }
 
 .about-text {
@@ -198,6 +228,7 @@ li {
   line-height: 1.86;
   letter-spacing: 0.02em;
   color: #555555;
+  margin-bottom: 42px;
 }
 
 .about-btn {
@@ -215,6 +246,8 @@ li {
 
 .prices {
   background-image: url(../images/prices.jpg);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .prices-uptitle {
@@ -224,6 +257,11 @@ li {
   text-transform: uppercase; */
   color: #9da4bd;
   opacity: 0.6;
+}
+
+.prices-list {
+  border: 1px solid #ff6c00;
+  padding: 30px 20px;
 }
 
 .prices-title {
@@ -246,9 +284,23 @@ li {
   text-transform: uppercase;
   cursor: pointer; */
   color: #ffffff;
+  display: block;
+  margin: 0 auto;
 }
 
 /* ----------BENEFITS---------- */
+
+.benefits {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.benefits-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  text-align: center;
+}
 
 .benefits-count {
   font-weight: 700;
@@ -277,10 +329,12 @@ li {
 
 .benefits-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .benefits-title {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .benefits-subtitle {
@@ -292,12 +346,19 @@ li {
 
 /* ------------BARBERS----------- */
 
+.barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .barbers-uptitle {
   color: #303030;
+  margin-bottom: 20px;
 }
 
 .barbers-title {
   color: #303030;
+  margin-bottom: 44px;
 }
 
 .barbers-item-title {
@@ -307,6 +368,7 @@ li {
   text-align: center;
   letter-spacing: 0.02em;
   color: #303030;
+  margin-bottom: 8px;
 }
 
 .barbers-item-text {
@@ -319,6 +381,11 @@ li {
 
 /* ------------GALLERY----------- */
 
+.gallery {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 .gallery-uptitle {
   color: #303030;
 }
@@ -327,6 +394,7 @@ li {
 
 .contacts {
   background-color: #303030;
+
 }
 
 .contacts-title {
@@ -339,6 +407,7 @@ li {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+
 .contacts-address {
   font-style: inherit;
 }
@@ -362,6 +431,11 @@ li {
 }
 
 /* ------------FOOTER----------- */
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
 
 .footer-text {
   font-weight: 600;
