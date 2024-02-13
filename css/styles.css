@@ -1,6 +1,5 @@
 :root {
   --font-raleway: "Raleway", sans-serif;
-
 }
 
 /* * {
@@ -11,7 +10,6 @@
 body {
   font-family: "Open Sans", sans-serif;
 }
-
 
 h1,
 h2,
@@ -61,6 +59,7 @@ img {
   width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  border: 1px solid #ff6c00;
 }
 
 .link {
@@ -84,6 +83,8 @@ img {
 }
 
 .btn {
+  min-width: 160px;
+  height: 40px;
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -92,7 +93,8 @@ img {
   text-transform: uppercase;
   border: 1px solid #ff6c00;
   border-radius: 25px;
-  /* cursor: pointer; */
+  cursor: pointer;
+  background-color: transparent;
 }
 
 /* ----------HEADER---------- */
@@ -106,15 +108,33 @@ img {
   color: #ffffff;
 }
 
+.logo {
+  margin-right: 131px;
+}
+
+.navigation {
+  margin-right: auto;
+}
+
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
-
 }
 
-/* .header-nav-link {
-  text-decoration: none;
-} */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 30px;
+}
+
+.header-nav-link {
+  /* text-decoration: none; */
+  color: #ffffff;
+}
 
 .header-nav-link:hover,
 .header-nav-link:focus,
@@ -141,12 +161,18 @@ img {
   /* border: 1px solid #ff6c00;
   border-radius: 25px; */
   color: #ffffff;
+  margin-left: 43px;
 }
 
 /* ------------HERO----------- */
 
+.hero-container {
+  display: flex;
+}
+
 .hero-list {
   background-color: #ffffff;
+  width: 100px;
 }
 
 .hero-link {
@@ -165,6 +191,7 @@ img {
 .hero-wrap {
   background-image: url(../images/hero-pic.jpg);
   padding: 272px 100px 208px 100px;
+  flex-grow: 1;
 }
 
 .hero-uptitle {
@@ -175,8 +202,8 @@ img {
 
 .hero-title {
   font-family: var(--font-raleway);
-  font-style: normal;
-  font-weight: 700;
+  /* font-style: normal;
+  font-weight: 700; */
   font-size: 72px;
   line-height: 1.18;
   letter-spacing: 0.05em;
@@ -186,9 +213,20 @@ img {
 
 .hero-subtitle {
   font-size: 18px;
-  line-height: 1.66;
+  line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+  max-width: 362px;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.hero-arrow-list {
+  display: flex;
 }
 
 /* ----------ABOUT---------- */
@@ -198,6 +236,20 @@ img {
   padding-bottom: 120px;
 }
 
+.about-container {
+  display: flex;
+  gap: 30px;
+}
+
+.about-list {
+  display: flex;
+  gap: 30px;
+}
+
+.about-wrap {
+  max-width: 470px;
+}
+
 .about-uptitle {
   /* font-weight: 600;
   font-size: 11px;
@@ -205,7 +257,6 @@ img {
   text-transform: uppercase; */
   color: #303030;
   margin-bottom: 20px;
-
 }
 
 .about-title {
@@ -257,15 +308,34 @@ img {
   text-transform: uppercase; */
   color: #9da4bd;
   opacity: 0.6;
+  margin-bottom: 20px;
+}
+.prices-wrap {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 30px; */
+  margin-bottom: 44px;
 }
 
 .prices-list {
   border: 1px solid #ff6c00;
   padding: 30px 20px;
+  width: calc((100% - 30px) / 2);
+}
+
+.prices-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.prices-item:last-child {
+  margin-bottom: 0;
 }
 
 .prices-title {
   color: #ffffff;
+  margin-bottom: 44px;
 }
 
 .prices-item-text {
@@ -361,6 +431,15 @@ img {
   margin-bottom: 44px;
 }
 
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+
 .barbers-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -388,13 +467,22 @@ img {
 
 .gallery-uptitle {
   color: #303030;
+  margin-bottom: 44px;
+}
+
+.gallery-list {
+  display: flex;
+  gap: 30px;
+}
+
+.gallery-item {
+  width: calc((100% - 90px) / 4);
 }
 
 /* ------------CONTACTS----------- */
 
 .contacts {
   background-color: #303030;
-
 }
 
 .contacts-title {
@@ -437,12 +525,22 @@ img {
   padding-bottom: 56px;
 }
 
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-text {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
   color: #9da4bd;
+}
+
+.footer-list {
+  display: flex;
+  gap: 40px;
 }
 
 .footer-link {
