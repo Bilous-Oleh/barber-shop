@@ -2,11 +2,6 @@
   --font-raleway: "Raleway", sans-serif;
 }
 
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
 body {
   font-family: "Open Sans", sans-serif;
 }
@@ -189,7 +184,11 @@ img {
 }
 
 .hero-wrap {
-  background-image: url(../images/hero-pic.jpg);
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/hero-img-3.jpg);
   padding: 272px 100px 208px 100px;
   flex-grow: 1;
 }
@@ -296,6 +295,7 @@ img {
 /* ----------PRICES---------- */
 
 .prices {
+  /* background-color: #111319; */
   background-image: url(../images/prices.jpg);
   padding-top: 120px;
   padding-bottom: 120px;
@@ -419,6 +419,7 @@ img {
 .barbers {
   padding-top: 120px;
   padding-bottom: 120px;
+  background-color: #f7f7f7;
 }
 
 .barbers-uptitle {
@@ -456,6 +457,37 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: #ff6c00;
+  margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.barbers-soc-icon {
+  fill: #303030;
+}
+
+.barbers-soc-link:hover .barbers-soc-icon,
+.barbers-soc-link:focus .barbers-soc-icon {
+  fill: #ff6c00;
 }
 
 /* ------------GALLERY----------- */
