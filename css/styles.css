@@ -141,6 +141,7 @@ img {
 .header-nav-link {
   /* text-decoration: none; */
   color: #ffffff;
+  transition: color 250ms linear;
 }
 
 .header-nav-link:hover,
@@ -177,9 +178,28 @@ img {
   display: flex;
 }
 
-.hero-list {
-  background-color: #ffffff;
+.hero-soc-wrap {
   width: 100px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 26px;
+  padding-bottom: 40px;
+}
+
+.hero-list {
+  /* background-color: #ffffff; */
+  display: flex;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
+  align-items: center;
+  gap: 40px;
+}
+
+.hero-list::before {
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
 }
 
 .hero-link {
@@ -518,6 +538,30 @@ img {
   width: calc((100% - 60px) / 3);
 }
 
+.barbers-item:hover .barbers-top-text {
+  transform: translateY(0);
+}
+
+.barbers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-top-text {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 108, 0, 0.6);
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  overflow: auto;
+}
+
 .barbers-item-title {
   font-weight: 400;
   font-size: 18px;
@@ -556,10 +600,16 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms linear;
 }
 
 .barbers-soc-icon {
   fill: #303030;
+  transition: fill 250ms linear;
+}
+
+.barbers-soc-link:hover {
+  background-color: #9da4bd;
 }
 
 .barbers-soc-link:hover .barbers-soc-icon,
@@ -590,6 +640,11 @@ img {
 
 .contacts-wrap {
   background-color: #191c26;
+  background-image: url(../images/contacts.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: calc(50% - 15px) 100%;
+
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -602,7 +657,6 @@ img {
 .online {
   width: calc(50% + 15px);
   padding-top: 130px;
-
 }
 
 .online-title {
@@ -612,7 +666,7 @@ img {
 /* ------------CONTACTS----------- */
 
 .contacts {
-  background-color: #303030;
+  /* background-color: #303030; */
   width: calc(50% - 15px);
   padding-top: 130px;
   padding-bottom: 120px;
@@ -629,8 +683,8 @@ img {
   margin-bottom: 70px;
 }
 
-.contacts-iten:not(:last-child) {
-  gap: 20px;
+.contacts-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .contacts-link {

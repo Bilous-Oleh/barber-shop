@@ -17,6 +17,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -53,30 +58,34 @@
     <main>
       <section class="hero">
         <div class="container hero-container">
-          <ul class="hero-list">
-            <li class="hero-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="hero-link link"
-                >Instagram</a
-              >
-            </li>
-            <li class="hero-item">
-              <a
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="hero-link link"
-                >Youtube</a
-              >
-            </li>
-          </ul>
+          <div class="hero-soc-wrap">
+            <ul class="hero-list">
+              <li class="hero-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hero-link link"
+                  >Instagram</a
+                >
+              </li>
+              <li class="hero-item">
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hero-link link"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
           <div class="hero-wrapper">
             <div class="hero-wrap">
               <p class="hero-uptitle uptitle">A hair salon for men in Kyiv</p>
-              <h1 class="hero-title">BarberShop</h1>
+              <h1 class="hero-title animate__animated animate__wobble">
+                BarberShop
+              </h1>
               <p class="hero-subtitle">
                 We are experts in trendy men’s haircuts. We work quickly,
                 carefully and with style.
@@ -112,7 +121,7 @@
           </ul>
           <div class="about-wrap">
             <p class="about-uptitle uptitle">About</p>
-            <h2 class="section-title about-title">
+            <h2 class="section-title about-title" data-aos="fade-up">
               Best Barbershop in your city
             </h2>
             <p class="about-subtitle">
@@ -136,7 +145,9 @@
           <p class="prices-uptitle uptitle">
             Spend your time with the best masters
           </p>
-          <h2 class="section-title prices-title">Services and prices</h2>
+          <h2 class="section-title prices-title" data-aos="fade-up">
+            Services and prices
+          </h2>
           <div class="prices-wrap">
             <ul class="prices-list">
               <li class="prices-item">
@@ -205,7 +216,7 @@
           </ul>
           <div class="benefits-wrap">
             <p class="benefits-uptitle uptitle">Old traditional school</p>
-            <h2 class="section-title benefits-title">
+            <h2 class="section-title benefits-title" data-aos="fade-up">
               ¿Why people come to us?
             </h2>
             <p class="benefits-subtitle">
@@ -221,15 +232,33 @@
           <p class="barbers-uptitle uptitle">
             For true enjoyers of the atmosphere
           </p>
-          <h2 class="barbers-title section-title">Our barbers</h2>
+          <h2 class="barbers-title section-title" data-aos="fade-up">
+            Our barbers
+          </h2>
           <ul class="barbers-list">
             <li class="barbers-item">
-              <img
-                src="./images/john-smith.jpg"
-                alt="John Smith"
-                width="370"
-                height="346"
-              />
+              <div class="barbers-top-wrap">
+                <img
+                  src="./images/john-smith.jpg"
+                  alt="John Smith"
+                  width="370"
+                  height="346"
+                />
+                <p class="barbers-top-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic
+                  molestias neque vero fugiat? Minus eligendi ullam id, ipsam
+                  natus voluptatibus odio amet doloremque obcaecati tempora
+                  laborum maxime facere laudantium tenetur. Corporis magnam
+                  officia doloremque quibusdam, exercitationem assumenda
+                  incidunt accusamus quam eum ratione, consequuntur provident
+                  repellendus asperiores nobis harum aperiam voluptates
+                  laudantium. Libero in ullam totam doloremque. Ut voluptas
+                  minima nesciunt? Accusamus natus culpa maiores non ratione ut
+                  quidem nisi commodi similique officiis tempora iure eveniet,
+                  perspiciatis possimus necessitatibus est omnis labore vero.
+                  Possimus modi magni omnis, tempora a quos totam!
+                </p>
+              </div>
               <h3 class="barbers-item-title">John Smith</h3>
               <p class="barbers-item-text">Extreme Barber</p>
               <ul class="barbers-soc-list">
@@ -428,7 +457,7 @@
       <section class="gallery">
         <div class="container">
           <p class="gallery-uptitle uptitle">In Latin, "barba" means "beard"</p>
-          <h2 class="section-title hide">Portfolio</h2>
+          <h2 class="section-title hide" data-aos="fade-up">Portfolio</h2>
           <ul class="gallery-list">
             <li class="gallery-item">
               <img
@@ -469,11 +498,15 @@
       <div class="contacts-wrap">
         <div class="container">
           <section class="online">
-            <h2 class="online-title section-title">Online-booking</h2>
+            <h2 class="online-title section-title" data-aos="fade-up">
+              Online-booking
+            </h2>
           </section>
           <section class="contacts" id="contacts">
             <div>
-              <h2 class="contacts-title section-title">Contacts</h2>
+              <h2 class="contacts-title section-title" data-aos="fade-up">
+                Contacts
+              </h2>
               <address class="contacts-address">
                 <ul class="contacts-list">
                   <li class="contacts-item">
@@ -503,7 +536,6 @@
               <p class="contacts-text">Every day from 9:00 to 22:00</p>
             </div>
           </section>
-
         </div>
       </div>
     </main>
@@ -536,5 +568,10 @@
         </ul>
       </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
