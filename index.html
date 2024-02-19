@@ -137,7 +137,7 @@
               always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about-btn btn">ONLINE-BOOKING</button>
+            <button class="about-btn btn" type="button">ONLINE-BOOKING</button>
           </div>
         </div>
       </section>
@@ -605,6 +605,34 @@
             <use href="./images/icons.svg#icon-close">Close</use>
           </svg>
         </button>
+        <p class="modal-title">Modal title</p>
+        <form class="modal-form">
+          <input
+            type="text"
+            name="user-name"
+            class="modal-input"
+            placeholder="Your name"
+            required
+          />
+          <input
+            type="email"
+            name="user-email"
+            id="email"
+            class="modal-input"
+            placeholder="some@example.com"
+          />
+          <input
+            type="tel"
+            name="user-phone"
+            class="modal-input"
+            id="tel"
+            placeholder="+380 (00) 000-00-00"
+            title="+380 (00) 000-00-00"
+            required
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+          />
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
 
@@ -613,5 +641,6 @@
       AOS.init();
     </script>
     <script src="./js/modal.js"></script>
+    <!-- <script src="./js/pattern.js"></script> -->
   </body>
 </html>
