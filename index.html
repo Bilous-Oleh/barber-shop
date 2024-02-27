@@ -545,11 +545,17 @@
                       >st. Vasilkivska, 7A Kyiv, 08132</a
                     >
                   </li>
+                  <svg class="contact-icon" width="24" height="24">
+                    <use href="/images/icons.svg#icon-map"></use>
+                  </svg>
                   <li class="contacts-item">
                     <a class="contacts-link link" href="tel:+380441111111"
                       >+38 044 111 11 11</a
                     >
                   </li>
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
                   <li class="contacts-item">
                     <a
                       class="contacts-link link"
@@ -557,6 +563,9 @@
                       >barbershop@email.com</a
                     >
                   </li>
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-email"></use>
+                  </svg>
                 </ul>
               </address>
               <p class="contacts-uptitle uptitle">Working hours</p>
@@ -607,13 +616,19 @@
         </button>
         <p class="modal-title">Modal title</p>
         <form class="modal-form">
-          <input
-            type="text"
-            name="user-name"
-            class="modal-input"
-            placeholder="Your name"
-            required
-          />
+          <div class="input-wrap">
+            <input
+              type="text"
+              name="user-name"
+              class="modal-input"
+              placeholder="Your name"
+              required
+            />
+            <svg class="modal-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          
           <input
             type="email"
             name="user-email"
@@ -621,6 +636,9 @@
             class="modal-input"
             placeholder="some@example.com"
           />
+          <svg class="modal-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
           <input
             type="tel"
             name="user-phone"
@@ -631,7 +649,10 @@
             required
             pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
           />
-          <button type="submit">Send</button>
+          <svg class="modal-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+          <button type="submit" class="button-modal">Send</button>
         </form>
       </div>
     </div>
