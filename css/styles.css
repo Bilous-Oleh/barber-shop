@@ -216,7 +216,7 @@ img {
   color: #ff6c00;
 }
 
-.hero-wrap {
+/* .hero-wrap {
   background-image: linear-gradient(
       rgba(25, 28, 38, 0.2),
       rgba(25, 28, 38, 0.2)
@@ -225,6 +225,69 @@ img {
   padding: 272px 100px 208px 100px;
   flex-grow: 1;
   position: relative;
+} */
+
+.hero-wrap {
+  overflow: hidden;
+  width: 100%;
+  height: 680px; /* Высота слайдера */
+  position: relative;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url(../images/hero-img-1.jpg), url(../images/hero-img-2.jpg),
+    url(../images/hero-img-3.jpg);
+  padding: 272px 100px 208px 100px;
+  flex-grow: 1;
+  z-index: -1;
+}
+
+.hero-slider img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Анимация для автопереключения слайдов */
+.hero-slider img:nth-child(1) {
+  animation: slide 15s infinite;
+}
+
+.hero-slider img:nth-child(2) {
+  animation: slide 15s infinite 2.5s;
+}
+
+.hero-slider img:nth-child(3) {
+  animation: slide 15s infinite 5s;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  33.33% {
+    opacity: 1;
+  }
+  53.33% {
+    opacity: 0;
+  }
+  66.66% {
+    opacity: 0;
+  }
+  86.66% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .hero-uptitle {
@@ -267,7 +330,7 @@ img {
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.01em;
-
+  z-index: 1;
   margin-bottom: 49px;
   margin-right: 20px;
   gap: 20px;
