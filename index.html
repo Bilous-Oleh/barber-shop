@@ -616,18 +616,21 @@
         </button>
         <p class="modal-title">Modal title</p>
         <form class="modal-form">
+          <label for="user-name" class="label-input">Your name</label>
           <div class="input-wrap">
             <input
               type="text"
               name="user-name"
               class="modal-input"
               placeholder="Your name"
+              id="user-name"
               required
             />
             <svg class="modal-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
+          <label for="email" class="label-input">Email</label>
           <div class="input-wrap">
             <input
               type="email"
@@ -640,6 +643,7 @@
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
+          <label for="tel" class="label-input">Phone</label>
           <div class="input-wrap">
             <input
               type="tel"
@@ -655,7 +659,16 @@
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
-          <button type="submit" class="button-modal">Send</button>
+
+          <label for="user-text" class="label-input"></label>
+          <textarea
+            name="user-text"
+            id="user-text"
+            class="modal-comment"
+            placeholder="Write your comment"
+          ></textarea>
+
+          <button type="submit" class="button-modal btn">Send</button>
         </form>
       </div>
     </div>
