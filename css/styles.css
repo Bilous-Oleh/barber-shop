@@ -126,6 +126,8 @@ img {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  position: absolute;
+  width: 100%;
 }
 
 .header-container {
@@ -922,12 +924,13 @@ img {
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .label-input {
   display: block;
   margin-bottom: 4px;
+  font-size: 14px;
 }
 
 .input-wrap {
@@ -941,8 +944,8 @@ img {
   border: 1px solid #303030;
   border-radius: 4px;
   background-color: transparent;
-  padding: 4px 32px 8px;
-  font-size: 16px;
+  padding: 8px 8px 8px 32px;
+  font-size: 14px;
   color: #303030;
   outline: transparent;
 }
@@ -970,13 +973,14 @@ img {
 }
 .modal-comment {
   width: 100%;
-  height: 120px;
+  height: 100px;
   border: 1px solid #303030;
   border-radius: 4px;
   resize: none;
   outline: transparent;
   /* font-size: 14px; */
   padding: 8px;
+  margin-bottom: 8px;
 }
 
 .modal-comment::placeholder {
@@ -989,6 +993,34 @@ img {
   border: 1px solid #ff6c00;
 }
 
+.check-text {
+  font-size: 12px;
+  color: #303030;
+  display: flex;
+  align-items: center;
+}
+
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 1px solid #303030;
+  border-radius: 2px;
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+
+.modal-check:checked + .check-text span {
+  background-color: #ff6c00;
+  border: none;
+  fill: #f7f7f7;
+}
+
+.modal-check:focus + .check-text span {
+  border-color: #ff6c00;
+}
 .button-modal {
   margin: 0 auto;
   display: block;
