@@ -104,6 +104,11 @@ img {
   background-color: transparent;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #ff6c00;
+}
+
 /* ----------HEADER---------- */
 
 .header a {
@@ -113,6 +118,7 @@ img {
   line-height: 1.33;
   letter-spacing: 0.1em;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .logo {
@@ -173,6 +179,11 @@ img {
   color: #ffffff;
   margin-left: 43px;
 }
+
+/* .header-btn:hover,
+.header-btn:focus {
+  background-color: #ff6c00;
+} */
 
 /* ------------HERO----------- */
 
@@ -422,6 +433,11 @@ img {
   cursor: pointer; */
   color: #303030;
 }
+
+/* .about-btn:hover,
+.about-btn:focus {
+  background-color: #ff6c00;
+} */
 
 /* ----------PRICES---------- */
 
@@ -769,6 +785,16 @@ img {
 
 .online-title {
   color: #ffffff;
+  margin-bottom: 44px;
+}
+
+.online-input {
+  width: 270px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #9da4bd;
+  opacity: 0.4;
 }
 
 /* ------------CONTACTS----------- */
