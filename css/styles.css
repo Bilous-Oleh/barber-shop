@@ -788,13 +788,40 @@ img {
   margin-bottom: 44px;
 }
 
+.online-wrap {
+  position: relative;
+}
+
 .online-input {
   width: 270px;
   height: 24px;
+}
+
+.online-label {
+  position: absolute;
+  left: 0;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-align: left;
+  text-transform: uppercase;
+  color: #9da4bd;
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.online-text {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid #9da4bd;
   opacity: 0.4;
+}
+
+.online-label:hover,
+.online-label:focus {
+  color: #ffffff;
+  opacity: 1;
 }
 
 /* ------------CONTACTS----------- */
