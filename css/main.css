@@ -187,9 +187,16 @@ body {
   color: #303030;
   outline: transparent;
 }
-
 .modal-input:focus {
   border-color: #ff6c00;
+}
+.modal-input::-moz-placeholder {
+  font-size: 14px;
+  color: #9da4bd;
+}
+.modal-input::placeholder {
+  font-size: 14px;
+  color: #9da4bd;
 }
 
 .modal-icon {
@@ -199,21 +206,8 @@ body {
   transform: translateY(-50%);
   fill: #303030;
 }
-
 .modal-input:focus + .modal-icon {
   fill: #ff6c00;
-}
-
-.modal-input::-moz-placeholder {
-  font-size: 14px;
-  color: #9da4bd;
-  /* padding-left: 30px; */
-}
-
-.modal-input::placeholder {
-  font-size: 14px;
-  color: #9da4bd;
-  /* padding-left: 30px; */
 }
 
 .modal-comment {
@@ -227,19 +221,14 @@ body {
   padding: 8px;
   margin-bottom: 8px;
 }
-
 .modal-comment::-moz-placeholder {
   font-size: 14px;
   color: #9da4bd;
-  /* padding-left: 30px; */
 }
-
 .modal-comment::placeholder {
   font-size: 14px;
   color: #9da4bd;
-  /* padding-left: 30px; */
 }
-
 .modal-comment:focus {
   border: 1px solid #ff6c00;
 }
@@ -262,13 +251,11 @@ body {
   justify-content: center;
   fill: transparent;
 }
-
 .modal-check:checked + .check-text span {
   background-color: #ff6c00;
   border: none;
   fill: #f7f7f7;
 }
-
 .modal-check:focus + .check-text span {
   border-color: #ff6c00;
 }
@@ -622,11 +609,9 @@ body {
   padding: 30px 20px;
   width: calc((100% - 30px) / 2);
 }
-
 .prices-list:first-child {
   background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
-
 .prices-list:last-child {
   background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 }
@@ -638,7 +623,6 @@ body {
   align-items: baseline;
   gap: 12px;
 }
-
 .prices-item::before {
   content: "";
   width: 100px;
@@ -646,7 +630,6 @@ body {
   background-color: #9da4bd;
   flex-grow: 1;
 }
-
 .prices-item:last-child {
   margin-bottom: 0;
 }
@@ -662,19 +645,11 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
-
 .prices-item-text:first-child {
   order: -1;
 }
 
 .prices-btn {
-  /* font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  cursor: pointer; */
   color: #ffffff;
   display: block;
   margin: 0 auto;
