@@ -1,0 +1,116 @@
+.barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f7f7f7;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.barbers-uptitle {
+  color: #303030;
+  margin-bottom: 20px;
+}
+
+.barbers-title {
+  color: #303030;
+  margin-bottom: 44px;
+}
+
+.barbers-list {
+  display: flex;
+  gap: 30px;
+}
+
+.barbers-item {
+  width: calc((100% - 60px) / 3);
+}
+
+// .barbers-top-wrap:hover .barbers-top-text {
+//   transform: translateY(0);
+// }
+
+.barbers-top-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.barbers-top-text {
+  position: absolute;
+  top: 0;
+  background-color: rgba(255, 108, 0, 0.6);
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  padding: 40px;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+  overflow: auto;
+  .barbers-top-wrap:hover & {
+    transform: translateY(0);
+  }
+}
+
+.barbers-item-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: calc(25 / 18);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+
+.barbers-item-text {
+  font-size: 14px;
+  line-height: calc(19 / 14);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+  margin-bottom: 30px;
+}
+
+.barbers-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.barbers-soc-item {
+  width: 44px;
+  height: 44px;
+}
+
+.barbers-soc-link {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms linear;
+  &:hover {
+    background-color: #9da4bd;
+  }
+}
+
+.barbers-soc-icon {
+  fill: #303030;
+  transition: fill 250ms linear;
+  .barbers-soc-link:hover &,
+  .barbers-soc-link:focus & {
+    fill: #ff6c00;
+  }
+}
+
+// .barbers-soc-link:hover {
+//   background-color: #9da4bd;
+// }
+
+// .barbers-soc-link:hover .barbers-soc-icon,
+// .barbers-soc-link:focus .barbers-soc-icon {
+//   fill: #ff6c00;
+// }
