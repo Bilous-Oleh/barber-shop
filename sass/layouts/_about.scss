@@ -33,15 +33,22 @@
 
 .about-subtitle {
   /* font-weight: 400; */
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(null, 18px, 1.67, 0.02em);
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
   color: #555555;
   margin-bottom: 20px;
 }
 
 .about-text {
   /* font-weight: 400; */
+  @include font(null, 14px, 1.86, 0.02em);
+  // font-size: 14px;
+  // line-height: 1.86;
+  // letter-spacing: 0.02em;
+  color: #555555;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;

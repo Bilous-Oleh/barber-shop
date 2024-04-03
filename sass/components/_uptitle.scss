@@ -1,7 +1,8 @@
 .uptitle {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
+  @include font(600, 11px, 1.36, null);
+  // font-weight: 600;
+  // font-size: 11px;
+  // line-height: 1.36;
   text-transform: uppercase;
   display: flex;
   align-items: center;

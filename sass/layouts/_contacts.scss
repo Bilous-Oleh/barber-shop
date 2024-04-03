@@ -21,9 +21,10 @@
 }
 
 .contacts-link {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(null, 18px, 167. 0.02em);
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
   color: #9da4bd;
 }
 .contacts-uptitle {
@@ -41,8 +42,9 @@
 // }
 
 .contacts-text {
-  font-size: 18px;
-  line-height: calc(30 / 18);
-  letter-spacing: 0.02em;
+  @include font(null, 18px, calc(30 / 18), 0.02em);
+  // font-size: 18px;
+  // line-height: calc(30 / 18);
+  // letter-spacing: 0.02em;
   color: #9da4bd;
 }

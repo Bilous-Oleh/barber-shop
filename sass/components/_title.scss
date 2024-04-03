@@ -1,8 +1,9 @@
 .section-title {
+  @include font(700, 42px, 1.16, 0.1em);
   font-family: var(--font-raleway);
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.16;
-  letter-spacing: 0.1em;
+  // font-weight: 700;
+  // font-size: 42px;
+  // line-height: 1.16;
+  // letter-spacing: 0.1em;
   color: #303030;
 }

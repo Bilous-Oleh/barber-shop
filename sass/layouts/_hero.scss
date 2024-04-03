@@ -13,10 +13,10 @@
 .hero-list {
   /* background-color: #ffffff; */
   display: flex;
-  transform: rotate(-90deg) translateY(100%);
-  transform-origin: bottom left;
   align-items: center;
   gap: 40px;
+  transform: rotate(-90deg) translateY(100%);
+  transform-origin: bottom left;
   &::before {
     content: "";
     width: 60px;
@@ -33,10 +33,11 @@
 // }
 
 .hero-link {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  letter-spacing: 0.2em;
+  @include font(600, 11px, 1.36, 0.2em);
+  // font-weight: 600;
+  // font-size: 11px;
+  // line-height: 1.36;
+  // letter-spacing: 0.2em;
   color: #303030;
   transition: color 250ms linear;
   &:hover,
@@ -147,19 +148,19 @@
 
 .hero-title {
   font-family: var(--font-raleway);
-  /* font-style: normal;
-  font-weight: 700; */
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
+  @include font(null, 72px, 1.18, 0.05em);
+  // font-size: 72px;
+  // line-height: 1.18;
+  // letter-spacing: 0.05em;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .hero-subtitle {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
+  @include font(null, 18px, 1.67, 0.02em);
+  // font-size: 18px;
+  // line-height: 1.67;
+  // letter-spacing: 0.02em;
   color: #9da4bd;
   max-width: 362px;
 }
@@ -171,14 +172,15 @@
 }
 
 .hero-arrow-list {
+  @include font(600, 11px, calc(15 / 11), 0.01em);
   display: flex;
   position: absolute;
   bottom: 0;
   right: 0;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
-  letter-spacing: 0.01em;
+  // font-weight: 600;
+  // font-size: 11px;
+  // line-height: calc(15 / 11);
+  // letter-spacing: 0.01em;
   z-index: 1;
   margin-bottom: 49px;
   margin-right: 20px;
