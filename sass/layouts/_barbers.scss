@@ -1,28 +1,56 @@
 .barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
   background-color: #f7f7f7;
-  max-width: 1600px;
-  margin: 0 auto;
+  // max-width: 1600px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+  @media screen and (min-width: 768px) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 .barbers-uptitle {
   color: #303030;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
+  margin: 0 auto 20px;
+  @media screen and (min-width: 768px) {
+    width: 448px;
+  }
 }
 
 .barbers-title {
   color: #303030;
-  margin-bottom: 44px;
+  // margin-bottom: 44px;
+  margin: 0 auto 44px;
+  @media screen and (min-width: 768px) {
+    width: 448px;
+  }
 }
 
 .barbers-list {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 480px) {
+    gap: 64px;
+  }
+  @media screen and (min-width: 1200px) {
+    gap: 30px;
+  }
 }
 
 .barbers-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 448px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 // .barbers-top-wrap:hover .barbers-top-text {
