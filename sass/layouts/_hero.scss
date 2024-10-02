@@ -1,13 +1,38 @@
 .hero-container {
   display: flex;
+  padding: 0;
+  // @media screen and (min-width: 480px) {
+  //   max-width: 100%;
+  // }
+  // @media screen and (min-width: 768px) {
+  //   max-width: 720px;
+  //   padding: 0 15px;
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   max-width: 1200px;
+  // }
+  @include mobile {
+    max-width: 100%;
+  }
+  @include tablet {
+    max-width: 720px;
+    padding: 0 15px;
+  }
+  @include desktop {
+    max-width: 1200px;
+  }
 }
 
 .hero-soc-wrap {
   width: 100px;
-  display: flex;
+  // display: flex;
+  display: none;
   align-items: flex-end;
   padding-left: 26px;
   padding-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .hero-list {
@@ -73,9 +98,16 @@
     ),
     url(../images/hero-img-1.jpg), url(../images/hero-img-2.jpg),
     url(../images/hero-img-3.jpg);
-  padding: 272px 100px 208px 100px;
+  // padding: 272px 100px 208px 100px;
+  padding: 208px 128px 209px 31px;
   flex-grow: 1;
   z-index: -1;
+  @media screen and (min-width: 768px) {
+    padding: 272px 114px 237px 114px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 272px 100px 208px 100px;
+  }
 }
 
 .hero-slider img {
@@ -148,21 +180,32 @@
 
 .hero-title {
   font-family: var(--font-raleway);
-  @include font(null, 72px, 1.18, 0.05em);
+  @include font(null, 42px, 1.33, 0.05em);
+  color: #ffffff;
+  margin-bottom: 20px;
+  // @include font(null, 72px, 1.18, 0.05em);
   // font-size: 72px;
   // line-height: 1.18;
   // letter-spacing: 0.05em;
-  color: #ffffff;
-  margin-bottom: 20px;
+  @media screen and (min-width: 480px) {
+    @include font(null, 48px, 1.16, 0.05em);
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(null, 72px, 1.18, 0.05em);
+  }
 }
 
 .hero-subtitle {
-  @include font(null, 18px, 1.67, 0.02em);
+  @include font(null, 16px, 1.62, 0.02em);
+  // @include font(null, 18px, 1.67, 0.02em);
   // font-size: 18px;
   // line-height: 1.67;
   // letter-spacing: 0.02em;
   color: #9da4bd;
   max-width: 362px;
+  @media screen and (min-width: 768px) {
+    @include font(null, 18px, 1.67, 0.02em);
+  }
 }
 
 .hero-wrapper {
